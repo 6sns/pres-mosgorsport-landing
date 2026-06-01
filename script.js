@@ -1,12 +1,10 @@
-// =============== HERO SLIDER (1 screen) ===============
+// =============== HERO SLIDER (manual only — no autoplay) ===============
 (function initHeroSlider() {
   const slides = document.querySelectorAll('.hero__slide');
   const dots = document.querySelectorAll('#heroDots .hero__dot');
   if (!slides.length) return;
 
   let current = 0;
-  let timer = null;
-  const INTERVAL = 6000;
 
   function goTo(idx) {
     slides[current].classList.remove('is-active');
@@ -16,24 +14,9 @@
     dots[current].classList.add('is-active');
   }
 
-  function start() {
-    stop();
-    timer = setInterval(() => goTo(current + 1), INTERVAL);
-  }
-  function stop() {
-    if (timer) clearInterval(timer);
-    timer = null;
-  }
-
   dots.forEach((dot, i) => {
-    dot.addEventListener('click', () => { goTo(i); start(); });
+    dot.addEventListener('click', () => goTo(i));
   });
-
-  const hero = document.querySelector('.hero');
-  hero.addEventListener('mouseenter', stop);
-  hero.addEventListener('mouseleave', start);
-
-  start();
 })();
 
 // =============== SCROLL DOWN ARROW ===============

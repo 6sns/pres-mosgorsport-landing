@@ -14,8 +14,8 @@
 <!-- ===================== HERO SLIDER (1 SCREEN) ===================== -->
 <section class="hero" id="hero">
   <div class="hero__slides">
-    <div class="hero__slide is-active" style="background-image: url('assets/hero-bg.png')"></div>
-    <div class="hero__slide" style="background-image: url('assets/hero-overlay.png')"></div>
+    <div class="hero__slide is-active" style="background-image: url('assets/hero-overlay.png')"></div>
+    <div class="hero__slide" style="background-image: url('assets/hero-bg.png')"></div>
     <div class="hero__slide" style="background-image: url('assets/space-orion.png')"></div>
     <div class="hero__slide" style="background-image: url('assets/space-ekran.png')"></div>
     <div class="hero__slide" style="background-image: url('assets/space-patriot.png')"></div>
@@ -25,13 +25,7 @@
   <!-- Header pill -->
   <header class="header">
     <a href="#" class="header__logo">
-      <svg width="32" height="28" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M24 0 L48 44 L0 44 Z" fill="#EC3333"/>
-        <rect x="12" y="29" width="24" height="3" rx="1" fill="white"/>
-        <rect x="16" y="21" width="16" height="3" rx="1" fill="white"/>
-        <rect x="19" y="13" width="10" height="3" rx="1" fill="white"/>
-      </svg>
-      <span>МОСГОРСПОРТ</span>
+      <img src="assets/logo.svg" alt="Мосгорспорт" />
     </a>
     <nav class="header__nav">
       <a href="#projects">Проекты</a>
@@ -52,11 +46,6 @@
   <!-- Hero content grid -->
   <div class="hero__content">
     <div class="hero__left">
-      <h1 class="hero__title">Летний сезон проекта<br>«Мой спортивный район»</h1>
-      <a href="#projects" class="btn btn--white">
-        <span>Читать подробнее</span>
-        <span class="btn__arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-      </a>
       <div class="hero__pagination" id="heroDots">
         <span class="hero__dot is-active"></span>
         <span class="hero__dot"></span>
@@ -64,23 +53,32 @@
         <span class="hero__dot"></span>
         <span class="hero__dot"></span>
       </div>
+      <h1 class="hero__title">Летний сезон проекта<br>«Мой спортивный район»</h1>
+      <a href="#projects" class="btn btn--white">
+        <span>Читать подробнее</span>
+        <span class="btn__arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+      </a>
     </div>
 
     <div class="hero__cards">
       <article class="hero-card">
-        <div class="hero-card__chips">
-          <span class="chip chip--ghost">Фигурное катание</span>
-          <span class="chip chip--ghost">Хоккей</span>
+        <button class="round-arrow round-arrow--red hero-card__arrow" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></button>
+        <div class="hero-card__bottom">
+          <div class="hero-card__chips">
+            <span class="chip chip--ghost">Фигурное катание</span>
+            <span class="chip chip--ghost">Хоккей</span>
+          </div>
+          <h3 class="hero-card__title">Записывайтесь в секции<br>в «НАВКА АРЕНЕ»</h3>
         </div>
-        <h3 class="hero-card__title">Записывайтесь в секции<br>в «НАВКА АРЕНЕ»</h3>
-        <button class="round-arrow round-arrow--red" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
       </article>
       <article class="hero-card">
-        <div class="hero-card__chips">
-          <span class="chip chip--ghost">Занятия спортом</span>
+        <button class="round-arrow round-arrow--red hero-card__arrow" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></button>
+        <div class="hero-card__bottom">
+          <div class="hero-card__chips">
+            <span class="chip chip--ghost">Занятия спортом</span>
+          </div>
+          <h3 class="hero-card__title">Новое спортивное<br>пространство «ОРИОН»</h3>
         </div>
-        <h3 class="hero-card__title">Новое спортивное<br>пространство «ОРИОН»</h3>
-        <button class="round-arrow round-arrow--red" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
       </article>
     </div>
   </div>
@@ -93,13 +91,18 @@
 <!-- ===================== SPORT SECTIONS GRID ===================== -->
 <section class="sport-grid">
   <div class="sport-grid__tall">
-    <div class="sport-grid__tile sport-grid__tile--tall" style="background-image: url('assets/sport-tennis.png')"></div>
+    <div class="sport-grid__tile sport-grid__tile--tall" style="background-image: url('assets/sport-tennis.png'); background-size: cover; background-position: left top">
+      <button class="round-arrow round-arrow--red sport-grid__tile-arrow" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></button>
+    </div>
   </div>
   <div class="sport-grid__right">
     <div class="sport-grid__top-row">
-      <div class="sport-grid__tile" style="background-image: url('assets/sport-football.png')"></div>
-      <div class="sport-grid__tile" style="background-image: url('assets/sport-hockey.png')"></div>
-      <div class="sport-grid__tile" style="background-image: url('assets/sport-skate.png')"></div>
+      <div class="sport-grid__tile" style="background-image: url('assets/picture%2044.png')">
+        <button class="round-arrow round-arrow--red sport-grid__tile-arrow" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></button>
+      </div>
+      <div class="sport-grid__tile" style="background-image: url('assets/sport-skate.png')">
+        <button class="round-arrow round-arrow--red sport-grid__tile-arrow" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></button>
+      </div>
     </div>
 
   <div class="sport-grid__body">
@@ -128,7 +131,7 @@
     </div>
     <a href="#" class="btn btn--red sport-grid__cta">
       <span>Записаться</span>
-      <span class="btn__arrow btn__arrow--white"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EC3333" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      <span class="btn__arrow btn__arrow--outline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
     </a>
   </div>
   </div>
@@ -144,32 +147,25 @@
     </div>
   </div>
   <div class="carousel" id="projects-track">
-    <article class="card card--hero-image" style="background-image: url('assets/sport-football.png')">
+    <article class="card card--hero-image" style="background-image: url('assets/picture.png')">
       <div class="card__overlay"></div>
       <div class="card__body-bottom">
         <h3 class="card__title-white">Спартакиада<br>«Мой спортивный район»</h3>
-        <button class="round-arrow round-arrow--red" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+        <button class="round-arrow round-arrow--red" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></button>
       </div>
     </article>
-    <article class="card card--hero-image" style="background-image: url('assets/news-cyclists.png')">
+    <article class="card card--hero-image" style="background-image: url('assets/picture%202.png')">
       <div class="card__overlay"></div>
       <div class="card__body-bottom">
         <h3 class="card__title-white">Проект «ГТО в парках»</h3>
-        <button class="round-arrow round-arrow--red" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+        <button class="round-arrow round-arrow--red" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></button>
       </div>
     </article>
-    <article class="card card--hero-image" style="background-image: url('assets/sport-hockey.png')">
+    <article class="card card--hero-image" style="background-image: url('assets/picture%203.png')">
       <div class="card__overlay"></div>
       <div class="card__body-bottom">
         <h3 class="card__title-white">Проект<br>«Мой спортивный район»</h3>
-        <button class="round-arrow round-arrow--red" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
-      </div>
-    </article>
-    <article class="card card--hero-image" style="background-image: url('assets/sport-tennis.png')">
-      <div class="card__overlay"></div>
-      <div class="card__body-bottom">
-        <h3 class="card__title-white">Запись в бесплатные<br>спортивные секции</h3>
-        <button class="round-arrow round-arrow--red" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+        <button class="round-arrow round-arrow--red" aria-label="Перейти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></button>
       </div>
     </article>
   </div>
@@ -192,7 +188,7 @@
       </div>
     </article>
     <article class="card card--with-text">
-      <div class="card__image" style="background-image: url('assets/space-ekran.png')"></div>
+      <div class="card__image" style="background-image: url('assets/picture%204.png?v=2')"></div>
       <div class="card__body">
         <h3 class="card__title">Спортивная зона<br>«Экран»</h3>
       </div>
@@ -238,18 +234,12 @@
 </section>
 
 <!-- ===================== ABOUT + STATS ===================== -->
-<section class="about" id="about" style="background-image: url('assets/news-football.png')">
+<section class="about" id="about" style="background-image: url('assets/section.png'); background-position: right center">
   <div class="about__overlay"></div>
   <div class="about__inner">
     <div class="about__card">
       <div class="about__logo">
-        <svg width="44" height="40" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M24 0 L48 44 L0 44 Z" fill="#EC3333"/>
-          <rect x="12" y="29" width="24" height="3" rx="1" fill="white"/>
-          <rect x="16" y="21" width="16" height="3" rx="1" fill="white"/>
-          <rect x="19" y="13" width="10" height="3" rx="1" fill="white"/>
-        </svg>
-        <span>МОСГОРСПОРТ</span>
+        <img src="assets/logo.svg" alt="Мосгорспорт" />
       </div>
       <p>ГБУ «МОСГОРСПОРТ» Москомспорта — это организация, главной целью которой является развитие физической культуры и спорта и реализация комплекса ГТО на территории города Москвы.</p>
       <p><strong>Основные направления деятельности:</strong></p>
@@ -293,33 +283,39 @@
   <div class="footer__inner">
     <div class="footer__col footer__col--logo">
       <div class="footer__logo">
-        <svg width="40" height="36" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M24 0 L48 44 L0 44 Z" fill="#EC3333"/>
-          <rect x="12" y="29" width="24" height="3" rx="1" fill="white"/>
-          <rect x="16" y="21" width="16" height="3" rx="1" fill="white"/>
-          <rect x="19" y="13" width="10" height="3" rx="1" fill="white"/>
-        </svg>
-        <span>МОСГОРСПОРТ</span>
+        <img src="assets/logo.svg" alt="Мосгорспорт" />
       </div>
     </div>
     <div class="footer__col">
       <h4>Пресс-служба</h4>
-      <p class="footer__muted">По вопросам организации съёмок, интервью, спецпроектов и инфопартнёрства (другие запросы не рассматриваются!)</p>
-      <p><strong>Начальник отдела по связям с общественностью</strong></p>
+      <p>По вопросам организации съёмок, интервью, спецпроектов и инфопартнёрства (другие запросы не рассматриваются!)</p>
+      <p>Начальник отдела по связям с общественностью</p>
       <p>Наталья Орлова</p>
-      <p class="footer__link">@pr_nataliya</p>
+      <a href="https://t.me/pr_nataliya" class="footer__link">
+        <svg class="footer__ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9z"/></svg>
+        <span>@pr_nataliya</span>
+      </a>
     </div>
     <div class="footer__col">
       <h4>По вопросам сотрудничества</h4>
-      <p><strong>Начальник отдела маркетинга</strong></p>
+      <p>Начальник отдела маркетинга</p>
       <p>Елена Еремичева</p>
-      <p class="footer__link">eremicheva.ev@mosgorsport.ru</p>
+      <a href="mailto:eremicheva.ev@mosgorsport.ru" class="footer__link">
+        <svg class="footer__ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        <span>eremicheva.ev@mosgorsport.ru</span>
+      </a>
     </div>
     <div class="footer__col">
       <h4>Контакты</h4>
-      <p class="footer__link"><span class="footer__ico">✉</span> mosgorsport@mossport.ru</p>
-      <p class="footer__link"><span class="footer__ico">✆</span> +7 (495) 198 08 03</p>
-      <p class="footer__muted footer__social-label">Мы в социальных сетях</p>
+      <a href="mailto:mosgorsport@mossport.ru" class="footer__link">
+        <svg class="footer__ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        <span>mosgorsport@mossport.ru</span>
+      </a>
+      <a href="tel:+74951980803" class="footer__link">
+        <svg class="footer__ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>+7 (495) 198 08 03</span>
+      </a>
+      <h4 class="footer__social-label">Мы в социальных сетях</h4>
       <div class="footer__social">
         <a href="#" aria-label="YouTube"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
         <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
@@ -330,7 +326,6 @@
     </div>
   </div>
   <div class="footer__divider"></div>
-  <div class="footer__copy">© 2026 ГБУ «Мосгорспорт» Москомспорта</div>
 </footer>
 
 <script src="script.js"></script>
