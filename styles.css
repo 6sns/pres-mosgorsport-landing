@@ -667,10 +667,11 @@ li { margin-bottom: 8px; }
 @media (max-width: 768px) {
   /* Hero */
   .hero {
-    height: auto;
-    min-height: auto;
-    overflow: visible;
-    padding: 12px 16px 20px;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 560px;
+    overflow: hidden;
+    padding: 12px 16px 24px;
   }
   .header {
     padding: 8px 12px;
@@ -681,9 +682,10 @@ li { margin-bottom: 8px; }
   .header__icon { width: 40px; height: 40px; }
 
   .hero__content {
-    gap: 18px;
-    margin-top: 20px;
-    padding-bottom: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: auto;
+    padding-bottom: 8px;
   }
   .hero__left { gap: 14px; }
   .hero__pagination { max-width: 100%; margin-bottom: 0; }
@@ -694,26 +696,7 @@ li { margin-bottom: 8px; }
   }
   .hero__title br { display: none; }
 
-  .hero__cards {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  .hero-card {
-    min-height: 0;
-    padding: 56px 14px 14px;
-    border-radius: 16px;
-  }
-  .hero-card__arrow { top: 12px; right: 12px; }
-  .hero-card__bottom { gap: 8px; }
-  .hero-card__title {
-    font-size: 14px;
-    line-height: 1.25;
-  }
-  .hero-card__title br { display: none; }
-  .hero-card .chip--ghost {
-    font-size: 13px;
-    padding: 4px 10px;
-  }
+  .hero__cards { display: none; }
 
   .btn {
     padding: 6px 6px 6px 18px;
